@@ -16,7 +16,7 @@ void merge(int* A, int* B, int* C, int size)
 		if (i < size) {	// A[]에 값이 남아있으면
 			C[k++] = A[i++];
 		}
-		if (j < size) {	// A[]에 값이 남아있으면
+		else if (j < size) {	// B[]에 값이 남아있으면
 			C[k++] = B[j++];
 		}
 	}
